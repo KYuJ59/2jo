@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js'></script>
+    <link rel="stylesheet" href="/starwave/css/reset.css">
+    <link rel="stylesheet" href="/starwave/css/animation.css">
+    <link rel="stylesheet" href="/starwave/css/style.css">
+    <link rel="stylesheet" href="/starwave/css/main.css">
+    <title>star wave</title>
+
+</head>
+
+<body>
+    <ul class="skipmenu">
+        <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
+    </ul>
+    <div id="header_wrap">
+        <header>
+            <h1 id="logo">
+                STAR WAVE
+                <img id="logo_col" src="/starwave/images/colorLogo.svg" alt="스타웨이브">
+                <img id="logo_whi" src="/starwave/images/whiteLogo.svg" alt="스타웨이브">
+            </h1>
+            <nav id="mainMenu_box">
+                <h2 class="hidden">전체 메뉴</h2>
+                <ul id="mainMenu_list">
+                    <li>
+                        <div class="mainMenus">
+                            <a class="mainMenu">ABOUT</a>
+                            <a class="mainMenu_hovers">ABOUT</a>
+                        </div>
+                        <ul class="subMenu_list">
+                            <li><a>STRATEGY</a></li>
+                            <li><a>CORE VALUES</a></li>
+                            <li><a>TECHNOLOGIES</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="mainMenus">
+                            <a class="mainMenu">VISION</a>
+                            <a class="mainMenu_hovers">VISION</a>
+                        </div>
+                        <ul class="subMenu_list">
+                            <li><a>INTRODUCTION</a></li>
+                            <li><a>PROJECT</a></li>
+                            <li><a>PHILOSOPHY</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="mainMenus">
+                            <a class="mainMenu">CREATOR</a>
+                            <a class="mainMenu_hovers">CREATOR</a>
+                        </div>
+                        <ul class="subMenu_list">
+                            <li><a>HISTORY</a></li>
+                            <li><a>PARTENERSHIPS</a></li>
+                            <li><a>COLLABORATIONS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="mainVisual_wrap">
+        <div id="mainVis_video">
+            <video src="/starwave/video/visvideo.mp4" type="video/mp4" preload="auto" muted autoplay loop></video>
+        </div>
+        <div id="Visual_textBox">
+            <p>삶을<br>
+                크리에이티브하게</p>
+        </div>
+    </div>
+
+    <!-- <div id="starwave_wrap"> -->
+    <section id="starwave">
+        <h2 class="hidden">starwave</h2>
+        <div id="circle0"></div>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="insideWave">
+            <p>STAR WAVE</p>
+            <p id="wave">STAR WAVE</p>
+        </div>
+        <div id="starwaveText">
+            THE BEGINNING OF A BUSINESS IS LIKE THE OCEAN.
+        </div>
+    </section>
+    <!-- </div> -->
+
+
+    <div id="innovation_wrap">
+        <section id="innovation">
+            <h2 class="hidden">innovation</h2>
+            <div id="innoText_box">
+                <p class="innoText in0">스타웨이브는 다양한 분야에서 혁신을 꿈꿉니다.</p>
+                <p class="innoText in1">당신의 자유롭고 창의적인 콘텐츠의 무한한 가능성을 함께합니다.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="waves_wrap">
+        <div id="waves_bgLogo"></div>
+        <section id="wavess">
+            <div id="waves_textBox">
+                <div id="wavesText">
+                    <div class="waves_text" id="WT0">
+                        <p>WAVES OF INNOVATION</p>
+                        <p>MAKING WAVES IN THE DIGITAL WORLD</p>
+                    </div>
+                    <div class="waves_text" id="WT1">
+                        <p>SURF THE FUTURE</p>
+                        <p>SURF THE FUTURE OF DIGITAL MEDIA</p>
+                    </div>
+                    <div class="waves_text" id="WT2">
+                        <p>BOUNDLESS</p>
+                        <p>BOUNDLESS POTENTIAL IN THE MCN UNIVERSE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="wavess2">
+            <h2>WHY 스타웨이브?</h2>
+            <div id="wavess2_Text">
+                <div class="wavess2_inner" id="wavess2_inner1">
+                    <p id="wav2_text1">바다 같은 <span class="changes">가능성</span></p>
+                </div>
+                <div class="wavess2_inner" id="wavess2_inner2">
+                    <p id="wav2_text2">인터넷 같은 <span class="changes">연결</span></p>
+                </div>
+                <div class="wavess2_inner" id="wavess2_inner3">
+                    <p id="wav2_text3">스타웨이브
+                        <a id="wavess2_circle"></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div id="wavess_bottom">
+            <div class="wvbtext_box">
+                <p class="wvbtext" id="wvb_fst">
+                    <span style="top:20px" class="p50">창의성</span>
+                    <span style="font-size:96px; top:-30px" class="p30">트렌드</span>
+                    <span style="top:-10px" class="p50">컨텐츠</span>
+                    <span style="font-size:48px; top:20px" class="p50">콜라보</span>
+                </p>
+                <p class="wvbtext" id="wvb_sec">
+                    <span style="top:-10px" class="p30">교육</span>
+                    <span style="top:20px" class="p50">브랜드 가치</span>
+                    <span style="top:5px" class="p30">마케팅</span>
+                </p>
+            </div>
+            <div id="wvbtext_box_bg"></div>
+        </div>
+    </div>
+
+    <div id="description_wrap">
+        <div class="description">
+            <p><img src="/starwave/images/shape0.png" alt="도형1"></p>
+            <p id="description0"><span>스타웨이브는 </span><span>누구나 </span><span>자유롭게 창의력을 발휘하며</span><br>
+                <span>콘텐츠의 </span><span>무한한 </span><span>가능성을 </span><span>탐험할 수 </span><span>있는 </span><span>환경을
+                </span><span>제공합니다.</span>
+            </p>
+        </div>
+        <div class="description">
+            <p id="description1"><span>다양한 </span><span>분야의 </span><span>콘텐츠를 </span><span>한곳에서
+                </span><span>제공하며,</span><br>
+                <span>누구나 </span><span>쉽고 </span><span>빠르게 </span><span>접근할 수 </span><span>있는 </span><span>트렌디 플랫폼
+                </span><span>문화를 </span><span>조성합니다.</span>
+            </p>
+            <p><img src="/starwave/images/shape1.png" alt="도형1"></p>
+        </div>
+    </div>
+    <!-- 기업설명영역 끝 -->
+    <!--키워드시작-->
+    <div id="keywords_wrap">
+        <section id="keywords">
+            <h2>KEYWORDS</h2>
+            <div id="keyList_box">
+                <ul id="key_list">
+                    <li class="key" id="key1">
+                        <div class="keyText" id="KT1">
+                            <p>디지털 혁신의 물결.</p>
+                            <br>
+                            <p>
+                                저희는 디지털 세상에서<br>
+                                새로운 물결을 일으키고 있습니다.<br>
+                                디지털 세계를 흔드는 혁신의 물결을<br>
+                                스타웨이브와 함께 만들어가요.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="key" id="key2">
+                        <div class="keyText" id="KT2">
+                            <p>디지털 혁신의 물결.</p>
+                            <br>
+                            <p>
+                                저희는 디지털 세상에서<br>
+                                새로운 물결을 일으키고 있습니다.<br>
+                                디지털 세계를 흔드는 혁신의 물결을<br>
+                                스타웨이브와 함께 만들어가요.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="key" id="key3">
+                        <div class="keyText" id="KT3">
+                            <p>디지털 혁신의 물결.</p>
+                            <br>
+                            <p>
+                                저희는 디지털 세상에서<br>
+                                새로운 물결을 일으키고 있습니다.<br>
+                                디지털 세계를 흔드는 혁신의 물결을<br>
+                                스타웨이브와 함께 만들어가요.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--키워드끝-->
+    <!-- 비지니스영역 시작 -->
+    <div id="business_wrap">
+        <h2>BUSINESS</h2>
+        <ul>
+            <li id="business3"><img src="/starwave/images/business3.jpg" alt="프로덕션"><a>게임행사</a></li>
+            <li id="business2"><img src="/starwave/images/business2.jpg" alt="IP사업"><a>IP사업</a></li>
+            <li id="business1"><img src="/starwave/images/business1.png" alt="마케팅 솔루션"><a>프로덕션</a></li>
+            <li id="business0"><img src="/starwave/images/business0.png" alt="크리에이터 파트너십"><a>크리에이터 파트너십</a></li>
+        </ul>
+    </div>
+    <!-- 비지니스영역 끝 -->
+    <!-- 크리에이터영역 시작 -->
+    <div id="creator_wrap">
+        <h2>CREATORS</h2>
+        <div id="creator_list">
+            <ul class="creator_list">
+                <li class="creator">
+                    <p><img src="/starwave/images/creators0.png" alt="요리사쿡"></p>
+                    <p class="creator_name">크루</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators1.png" alt="FILIA"></p>
+                    <p class="creator_name">밍찡</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators2.png" alt="담스키친"></p>
+                    <p class="creator_name">FILIA</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators3.png" alt="조이"></p>
+                    <p class="creator_name">담스키친</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators4.png" alt="밍찡"></p>
+                    <p class="creator_name">조이</p>
+                </li>
+            </ul>
+            <ul class="creator_list">
+                <li class="creator">
+                    <p><img src="/starwave/images/creators0.png" alt="요리사쿡"></p>
+                    <p class="creator_name">크루</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators1.png" alt="FILIA"></p>
+                    <p class="creator_name">밍찡</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators2.png" alt="담스키친"></p>
+                    <p class="creator_name">FILIA</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators3.png" alt="조이"></p>
+                    <p class="creator_name">담스키친</p>
+                </li>
+                <li class="creator">
+                    <p><img src="/starwave/images/creators4.png" alt="밍찡"></p>
+                    <p class="creator_name">조이</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 크리에이터영역 끝 -->
+    <!-- 유투브영역 시작 -->
+    <div id="youtube_wrap">
+        <h2>YOUTUBE</h2>
+        <div id="youtube">
+            <div id="youtube_play">
+                <p><img src="/starwave/images/youtube0.jpg" alt="유투브영상"></p>
+                <a href="#"><img src="/starwave/images/play_btn.png" alt="재생버튼"></a>
+            </div>
+            <div id="youtube_list">
+                <ul>
+                    <li>
+                        <p><a href="#">금강산도 식후경</a></p>
+                        <p class="arrow_wrap"><a href="#"><i class="fa-solid fa-arrow-right"></i><i
+                                    class="fa-solid fa-arrow-right selected_arrow"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">MZ 특급열차</a></p>
+                        <p class="arrow_wrap"><a href="#"><i class="fa-solid fa-arrow-right"></i><i
+                                    class="fa-solid fa-arrow-right selected_arrow"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">뭉치면 논다</a></p>
+                        <p class="arrow_wrap"><a href="#"><i class="fa-solid fa-arrow-right"></i><i
+                                    class="fa-solid fa-arrow-right selected_arrow"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">요즘애들 컬렉션</a></p>
+                        <p class="arrow_wrap"><a href="#"><i class="fa-solid fa-arrow-right"></i><i
+                                    class="fa-solid fa-arrow-right selected_arrow"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">오, 나의 酒</a></p>
+                        <p class="arrow_wrap"><a href="#"><i class="fa-solid fa-arrow-right"></i><i
+                                    class="fa-solid fa-arrow-right selected_arrow"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">너네 뭐하니?</a></p>
+                        <p class="arrow_wrap"><a href="#"><i class="fa-solid fa-arrow-right"></i><i
+                                    class="fa-solid fa-arrow-right selected_arrow"></i></a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="view_more"><a href="#">오리지널 컨텐츠 더보기<i class="fa-solid fa-arrow-right"></a></i></div>
+    </div>
+    <!-- 유투브영역 끝 -->
+    <!-- 파트너영역 시작 -->
+    <div id="partner_wrap">
+        <h2>PARTNER</h2>
+        <div id="partner_1">
+            <ul class="partner slide_logo_left">
+                <li><img src="/starwave/images/partner_logo0.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo1.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo2.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo3.jpg" alt="파트너로고"></li>
+            </ul>
+            <ul class="partner slide_logo_left">
+                <li><img src="/starwave/images/partner_logo0.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo1.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo2.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo3.jpg" alt="파트너로고"></li>
+            </ul>
+        </div>
+        <div id="partner_2">
+            <ul class="partner slide_logo_right">
+                <li><img src="/starwave/images/partner_logo4.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo5.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo6.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo7.jpg" alt="파트너로고"></li>
+            </ul>
+            <ul class="partner slide_logo_right">
+                <li><img src="/starwave/images/partner_logo4.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo5.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo6.jpg" alt="파트너로고"></li>
+                <li><img src="/starwave/images/partner_logo7.jpg" alt="파트너로고"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 파트너영역 끝 -->
+    <!-- 푸터영역 시작 -->
+    <footer>
+        <div id="footer_wrap">
+            <div id="foot_wave">
+                <p><img src="/starwave/images/footer.png" alt="파도"></p>
+                <p><img src="/starwave/images/footer.png" alt="파도"></p>
+            </div>
+            <div id="footer">
+                <div>
+                    <p>STAR WAVE</p>
+                    <p>BUSINESS</p>
+                    <p>CREATOR</p>
+                    <p>Recruitment</p>
+                </div>
+                <div>
+                    <p>Company Name: 스타웨이브</p>
+                    <p>Owner: 김선영</p>
+                    <p>Address: 인천 부평구 부평대로 19-1 6층, 9층, 10층 </p>
+                </div>
+                <div>
+                    <p>call: 050-1234-5678</p>
+                    <p>Email: starwave_info@gmail.com</p>
+                </div>
+                <div>ⓒSTARWAVE All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <img id="footer_icon" src="/starwave/images/footer_logo.png" alt="아이콘">
+    <img id="selected_footer_icon" src="/starwave/images/selected_footer_logo.png" alt="아이콘">
+    <!-- 푸터영역 끝 -->
+    <script type="text/javascript" src="/starwave/js/menubar.js"></script>
+    <script type="text/javascript" src="/starwave/js/wave.js"></script>
+    <script type="text/javascript" src="/starwave/js/contents.js"></script>
+    <script type="text/javascript" src="/starwave/js/footer.js"></script>
+</body>
+
+</html>

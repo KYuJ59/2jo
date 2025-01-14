@@ -1,0 +1,582 @@
+.hidden {
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+ul.skipmenu>li>a:focus {
+    width: 100%;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    font: normal 16px/30px "맑은고딕";
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    cursor: default;
+}
+
+body{
+    overflow-x: hidden;
+}
+/*여기까지기본설정정*/
+
+#header_wrap {
+    width: 100%;
+    height: 105px;
+    background: transparent;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+#logo {
+    width: 327px;
+    height: 61px;
+    /* background: url("../images/logo.png") no-repeat center;
+    background-size: cover; */
+    position: absolute;
+    left: 65px;
+    top: 17.5px;
+    text-indent: -99999px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+header {
+    width: 100%;
+    height: 104px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border-bottom: solid 1px #c2c2c2;
+}
+
+#mainMenu_box {
+    width: auto;
+    height: 38px;
+    padding: 0px 50px;
+    position: absolute;
+    left: 32.76%;
+    top: 35px;
+    overflow: hidden;
+}
+
+#mainMenu_list>li {
+    height: 38px;
+    float: left;
+    margin-left: 214px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    color: #ffffff;
+}
+
+#mainMenu_list>li:first-child {
+    margin-left: 0px;
+}
+
+.mainMenus {
+    height: 38px;
+    padding: 5px 10px;
+    font: normal 32px/38px "pretendard";
+    position: relative;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.mainMenus>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mainMenu_hovers {
+    transform: rotateX(-90deg) translate3d(0px, -19px, 10px);
+}
+
+.subMenu_list {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    text-align: center;
+    font: normal 24px/40px 'pretendard';
+    font-weight: 300;
+    color: #ffffff;
+    display: none;
+}
+
+.subMenu_list>li {
+    margin-bottom: 15px;
+}
+
+.subMenu_list>li:hover>a {
+    border-bottom: solid 1px #ffffff;
+}
+
+/*메인비주얼*/
+#mainVisual_wrap {
+    width: 100%;
+    height: 954px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background: #123752;
+}
+#mainVis_video{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    overflow: hidden;
+}
+#mainVis_video>video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#Visual_textBox {
+    width: 692px;
+    height: 238px;
+    position: absolute;
+    left: 66px;
+    top: 616px;
+}
+
+#Visual_textBox>p {
+    font: normal 100px/110px "pretendard";
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/*메인비주얼끝*/
+
+/*물방울과웨이브*/
+#starwave_wrap {
+    width: 100%;
+    height: 1954px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 300px;
+}
+
+#starwave {
+    width: 100%;
+    height: 954px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+#circle0 {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #1da7c9;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -50px;
+}
+
+#circle1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #49e7d2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -50px;
+}
+
+#circle2 {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #61f2c4;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -50px;
+}
+
+#insideWave {
+    width: 1220px;
+    height: 162px;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    transform: translateX(-50%);
+    font: normal 100px/162px 'pretendard';
+    font-weight: 900;
+    text-align: center;
+    color: transparent;
+}
+
+#insideWave p:nth-child(1) {
+    -webkit-text-stroke: 4px #1da7c9;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#insideWave p:nth-child(2) {
+    background: url('../images/inside_wave.svg');
+    -webkit-background-clip: text;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: insideWave 20s linear infinite;
+}
+
+div#starwaveText {
+    width: 820px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 140px;
+    font: normal 32px/50px "pretendard";
+    font-weight: 400;
+    color: #5d94ab;
+    text-align: center;
+}
+
+/*물방울과웨이브끝*/
+
+/*혁신*/
+
+#innovation_wrap {
+    width: 100%;
+    height: 954px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+
+}
+
+#innovation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font: normal 32px/46px 'pretendard';
+    font-weight: 600;
+    color: #5d94ab;
+    /* background: orange; */
+}
+
+
+#innoText_box {
+    width: 100%;
+    height: 92px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.innoText>span {
+    opacity: 0;
+}
+
+/*혁신끝*/
+
+/*????*/
+#waves_wrap {
+    width: 100%;
+    height: 7908px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 300px;
+    background: linear-gradient(to bottom, rgba(73, 231, 210, 0) 0%, rgba(73, 231, 210, 0.3) 10%, rgba(29, 167, 201, 1) 50%, rgba(73, 231, 210, 0.3) 100%);
+}
+
+#wavess {
+    width: 100%;
+    height: 1954px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+#waves_bgLogo {
+    width: 100%;
+    height: 957px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    background: url('../images/imgLogo_black.png')no-repeat center;
+    opacity: 0.1;
+}
+
+#waves_textBox {
+    width: 1626px;
+    height: 330px;
+    position: absolute;
+    left: 50%;
+    top: 1000px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#wavesText {
+    width: 100%;
+    height: 990px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.waves_text {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+
+.waves_text p:nth-child(1) {
+    font: normal 140px/195px 'k2d';
+    font-weight: 600;
+}
+
+.waves_text p:nth-child(2) {
+    font: normal 70px/135px 'k2d';
+}
+
+#WT1 {
+    top: 330px;
+}
+
+#WT2 {
+    top: 660px;
+}
+
+#wavess2 {
+    width: 100%;
+    height: 1554px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+#wavess2>h2 {
+    position: absolute;
+    left: -300px;
+    top: 80px;
+    font: normal 24px 'pretendard';
+    color: #ffffff;
+    text-indent: 30vw;
+}
+
+#wavess2_Text {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+}
+
+.wavess2_inner {
+    width: 100%;
+    height: 150px;
+    padding-left: 30vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    font: normal 100px/150px 'pretendard';
+    font-weight: 600;
+    text-align: start;
+    color: #ffffff;
+}
+
+.wavess2_inner>p {
+    transform: translateY(100%);
+    opacity: 0;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+
+#wavess2_circle{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:#1da7c9;
+    position:absolute;
+    left:460px;
+    bottom:10px;
+    opacity:0;
+}
+
+#wavess_bottom {
+    width: 100%;
+    height: 680px;
+}
+
+#wvbtext_box_bg {
+    width: 100%;
+    height: 400px;
+    background: url('../images/middle_wave.svg')bottom;
+    background-repeat: repeat-x;
+    background-size:200%;
+    background-position-y: 40px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation: wave2 10s linear infinite;
+}
+
+.wvbtext_box {
+    width: 1442px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+}
+
+.wvbtext {
+    font: normal 64px/150px 'pretendard';
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    animation: wvaess3 5s linear infinite;
+}
+
+.wvbtext>span {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transform: translateY(300%);
+}
+
+#wvb_fst>span {
+    margin: 0px 60px;
+}
+
+#wvb_fst>span:nth-child(2) {
+    margin-right: 210px;
+}
+
+#wvb_sec>span {
+    margin: 0px 120px;
+}
+
+.p50 {
+    opacity: 0.5;
+}
+
+.p30 {
+    opacity: 0.3;
+}
+
+/*????끝*/
+/*키워드시작*/
+
+#keywords_wrap {
+    width:100%;
+    height: 2300px;
+    padding-top:100px;
+    margin:300px 0px;
+}
+#keywords>h2{
+    text-indent:16px;
+    font:normal 64px/96px 'pretendard';
+    font-weight:800;
+    color:#7195A5;
+    margin-bottom:50px;
+}
+#keywords{
+    width:100%;
+    height:950px;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+#keyList_box{
+    width:1240px;
+    height:565px;
+    margin:0px auto;
+}
+#key_list>li{
+    width:392px;
+    height:565px;
+    float:left;
+    margin-left:32px;
+    border-radius:20px;
+    opacity:0;
+}
+#key_list>li:first-child{
+    margin-left:0px;
+    background:url('../images/keyword4.png')no-repeat center;
+    background-size:cover;
+}
+#key_list>li:nth-child(2){
+    background:url('../images/keyword5.png')no-repeat center;
+    background-size:cover;
+}
+#key_list>li:nth-child(3){
+    background:url('../images/keyword6.png')no-repeat center;
+    background-size:cover;
+}
+.keyText{
+    width:100%;
+    height:250px;
+    font:normal 20px/30px 'pretendard';
+    text-shadow: 3px 3px 14px 5px rgba(0,0,0,0.4);
+    color:#ffffff;
+    margin:114px 0px 0px 30px;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.25);
+    opacity:0;
+}
+.keyText>p:first-child{
+    font-size:24px;
+    font-weight:500;
+}
+/*키워드끝*/

@@ -1,0 +1,31 @@
+@keyframes insideWave {
+    0%{
+        background-position-x:0px;
+    }
+    100%{
+        background-position-x:1171.98px;
+    }
+}
+@keyframes wave2 {
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position-x:-100%;
+    }
+}
+
+
+@keyframes wvaess3 {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}

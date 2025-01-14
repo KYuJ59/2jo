@@ -1,0 +1,434 @@
+
+/* 기업설명영역 시작 */
+div#description_wrap{
+    width: 1529px;
+    height: auto;
+    margin: 370px auto 0px auto;
+}
+div.description{
+    display: flex;
+    width: 1499px;
+    height: 362px;
+}
+div.description p{
+    width: 362px;
+    height: 362px;
+}
+div.description p img{
+    width: 100%;
+    height: 100%;
+    animation: float 6s ease-in-out infinite;
+}
+p#description0{
+    width: 1035px;
+    height: 96px;
+    margin: 126px 0px 0px 101px;
+    font: 700 40px 'pretendard';
+    color: #B8B8B8;
+    transition: color 0.5s ease;
+}
+p#description1{
+    width: 1070px;
+    height: 96px;
+    margin: 126px 75px 0px 0px;
+    font: 700 40px 'pretendard';
+    color: #B8B8B8;
+}
+div#description_wrap div:nth-child(2){
+    margin-top: 312px;
+}
+@keyframes float {
+	0% {
+        filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+		transform: translatey(0px);
+	}
+	50% {
+		filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.2));
+		transform: translatey(-20px);
+	}
+	100% {
+        filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+		transform: translatey(0px);
+	}
+}
+/* 기업설명영역 끝 */
+/* 비지니스영역 시작 */
+div#business_wrap{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    margin-top: 502px;
+}
+h2{
+    font: normal 64px 'pretendard';
+    font-weight: 800;
+    color: #7195A5;
+}
+div#business_wrap ul{
+    width: 1200px;
+    height: 640px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px auto;
+    margin-top: 112px;
+}
+div#business_wrap ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+div#business_wrap ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+div#business_wrap ul li a{
+    font: 800 100px 'pretendard';
+    color: white;
+    letter-spacing: 5px;
+    position: absolute;
+}
+/* 비지니스영역 끝 */
+/* 크리에이터영역 시작 */
+div#creator_wrap{
+    width: 100%;
+    height: 699px;
+    padding: 16px;
+    margin-top: 445px;
+    overflow: hidden;
+}
+div#creator_list{
+    display: flex;
+}
+ul.creator_list{
+    width: 2336px;
+    height: 536px;
+    display: flex;
+    margin-top: 112px;
+    animation: slideAnimation 15s linear infinite;
+}
+li.creator{
+    width: 440px;
+    height: 536px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-right: 34px;
+}
+li.creator p{
+    width: 100%;
+    height: 100%;
+}
+li.creator p img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+}
+p.creator_name{
+    width: 440px;
+    height: 20px;
+    font: normal 64px 'pretendard';
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 420px;
+}
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* 크리에이터영역 끝 */
+/* 유투브영역 시작 */
+div#youtube_wrap{
+    width: 100%;
+    height: 1013px;
+    margin-top: 470px;
+    padding: 16px;
+}
+div#youtube{
+    display: flex;
+    margin: 112px;
+}
+div#youtube_play{
+    width: 1203px;
+    height: 691px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+div#youtube_play p{
+    width: 100%;
+    height: 100%;
+}
+div#youtube_play p img{
+    width: 100%;
+    height: 100%;
+}
+div#youtube_play a{
+    display: block;
+    width: 1720x;
+    height: 83px;
+    position: absolute;
+    top: 300px;
+    left: 520px;
+}
+div#youtube_play a img{
+    width: 100%;
+    height: 100%;
+}
+div#youtube_list{
+    width: 505px;
+    height: 691px;
+    margin-left: 51px;
+}
+div#youtube_list ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px #BBBBBB;
+}
+div#youtube_list ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 115px;
+    border-bottom: solid 1px #BBBBBB;
+    overflow: hidden;
+}
+div#youtube_list ul li p:nth-child(1){
+    width: 330px;
+    height: 100%;
+}
+div#youtube_list ul li p:nth-child(1) a{
+    font: normal 48px 'pretendard';
+    color: #BBBBBB;
+    line-height: 115px;
+}
+div#youtube_list ul li p:nth-child(2){
+    width: 72px;
+    height: 72px;
+}
+i.fa-arrow-right{
+    width: 100%;
+    height: 110%;
+    font-size: 48px;
+    text-align: center;
+    line-height: 65px;
+    line-height: 115px;
+    color: #BBBBBB;
+    transform: rotate(-45deg);
+}
+div#view_more{
+    width: 586px;
+    height: 80px;
+    margin: 0px auto;
+    border-bottom: solid 4px #5C5C5C;
+    display: flex;
+    justify-content: space-between;
+}
+div#view_more a{
+    font: normal 48px 'pretandard';
+    font-weight: 600;
+    color: #5C5C5C;
+}
+div#view_more i{
+    width: 72px;
+    height: 72px;
+    transform: rotate(45deg);
+    line-height: 72px;
+    color: #5C5C5C;
+}
+i.selected_arrow{
+    color: #50B0C8;
+}
+/* 유투브영역 끝 */
+/* 파트너영역 시작 */
+div#partner_wrap{
+    width: 100%;
+    height: 640px;
+    margin-top: 334px;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div#partner_1{
+    display: flex;
+    margin-top: 112px;
+    width: 100%;
+}
+div#partner_2{
+    display: flex;
+    position: absolute;
+    left: -1807px;
+}
+ul.partner{
+    width: 1807px;
+    height: 100px;
+    display: flex;
+    margin: 0px auto;
+}
+ul.slide_logo_left{
+    animation: slideLogoAnimationLeft 15s linear infinite;
+}
+ul.slide_logo_right{
+    animation: slideLogoAnimationRight 15s linear infinite;
+}
+div#partner_2 ul:nth-child(1){
+    margin-top: 112px;
+}
+div#partner_2 ul:nth-child(2){
+    margin-top: 112px;
+}
+ul.partner li{
+    width: 397px;
+    height: 100px;
+    margin-right: 73px;
+}
+ul.partner li img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slideLogoAnimationLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideLogoAnimationRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+/* 파트너영역 끝 */
+/* 푸터영역 시작 */
+div#footer_wrap{
+    width: 100%;
+    height: 1012px;
+    margin-top: 500px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+div#foot_wave{
+    width: 4384px;
+    height: 1012px;
+    display: flex;
+    position: absolute;
+    top: 0ox;
+    left: 0px;
+}
+div#foot_wave p{
+    width: 100%;
+    height: 100%;
+}
+div#foot_wave p img{
+    width: 100%;
+    height: 100%;
+}
+div#footer{
+    width: 1570px;
+    height: 631px;
+    position: absolute;
+    top: 204px;
+    left: 175px;
+}
+div#footer div:nth-child(1){
+    width: 1300px;
+    height: 40px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+div#footer div:nth-child(1) p{
+    font: 600 40px 'pretendard';
+    color: white;
+    margin-right: 100px;
+}
+div#footer div:nth-child(1) p:last-child {
+    margin-right: 0;
+}
+div#footer div:nth-child(2){
+    width: 1570px;
+    height: 32px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+div#footer div:nth-child(2) p{
+    font: normal 32px 'pretendard';
+    color: white;
+    margin-right: 159px;
+}
+div#footer div:nth-child(2) p:last-child {
+    margin-right: 0;
+}
+div#footer div:nth-child(3){
+    width: 933px;
+    height: 32px;
+    margin: 100px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+div#footer div:nth-child(3) p{
+    font: normal 32px 'pretendard';
+    color: white;
+    margin-right: 149px;
+}
+div#footer div:nth-child(3) p:last-child {
+    margin-right: 0;
+}
+div#footer div:nth-child(4){
+    width: 480px;
+    height: 32px;
+    margin: 210px auto 0px auto;
+    justify-content: center;
+    font: normal 32px 'pretendard';
+    color: white;
+}
+#footer_icon{
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 73px;
+    animation: rotateAnimation 5s linear infinite;
+}
+#selected_footer_icon{
+    display: none;
+    width: 344px;
+    height: 110px;
+    border-radius: 70px;
+    position: fixed;
+    bottom: 100px;
+    right: 73px;
+    border: solid 1px #1DA7C9;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* 푸터영역 끝 */
+
